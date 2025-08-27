@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class human{
+            age=15;  /// p;ublic 
+           #wt=56;   //private
+            ht=455;
+
+            constructor(newAge ,newHeight){
+                this.age=newAge;
+                this.ht=newHeight;
+                this.#wt=70;
+
+            }
+             walking(){ //behaviour
+                console.log("walking " , this.#wt);
+
+               
+
+                }
+                 get fetchweight(){
+                    return this.#wt;
+             }
+             set modifyWeight(val){
+                this.#wt=val;
+             }
+             
+        }
+
+        let obj=new human( 50,560,79);
+        console.log(obj.wt);
+        console.log(obj.walking());
+        console.log(obj.fetchweight);
+        //obj.modifyWeight=90;
+        console.log(obj.fetchweight);
+        console.log(obj.age);
+        console.log(obj.ht);
+        console.log(obj.fetchweight);
+        console.log(obj);
+
+
+        //default case parameters
+
+        function sayName(myName="astha upadhyay"){
+            console.log("My name is " , myName);
+        }
+        sayName();
+
+        function solve( value =["astha","arya","ssddd","princu"]){
+            console.log(value);
+
+        }
+        solve();
+
+        function sayName(value="astha upadhyay"){
+            console.log("My name is " , value);
+        }
+        sayName();
+
+        function sayName(myName={name:"astha upadhyay" ,age:19 }){
+            console.log("My name is " , myName);
+        }
+        sayName();
+
+
+        //  null case as default parameter
+
+        function sayName(value="astha upadhyay"){
+            console.log("My name is " , value);
+        }
+        sayName(null);
+
+        // undefined case as default parameter
+
+
+        function sayName(value="astha upadhyay"){
+            console.log("My name is " , value);
+        }
+        sayName(undefined);
+
+
+        //function as default parameter
+
+        function getAge(){
+            return 190;
+        }
+        function uitlity(name="astha" ,age= getAge()){
+          console.log(name , " " ,age);
+        }
+
+        uitlity();
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
