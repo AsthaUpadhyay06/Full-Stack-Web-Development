@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// function hosting
+// // {
+//         a("hello");
+
+//         function a(){
+//             console.log("hello");
+//         }
+//     }
+
+
+// variable hoisting 
+
+
+//     console.log(x);
+//     var x=7;
+
+
+// function variable ko assign krne k liye ......
+ let greet=function(){
+    console.log("hello what's up");
+
+}
+//  greet();
+
+
+
+// function passs
+
+//  function greeMe(greet,fullName){
+//     console.log("hello",fullName);
+//     greet();
+//  }
+//  greeMe(greet,"astha");
+
+
+  // Data  structure function
+
+  const arr= [function(a,b){
+    return a+b;
+  },
+  function(a,b){
+    return a-b;
+  },
+  function(a,b){
+    return a*b;
+  }];
+   let first=arr[1];
+   let ans=first(5,10);
+   console.log(ans);
+
+   
+
+
+
+    </script>
+</body>
+</html>
