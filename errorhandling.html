@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Compile time errortax error
+
+        // //syntax error
+        // console.log(1
+
+
+        //runtime error
+        //reference error
+        // console.log(a);
+
+
+        // try{
+        //     console.log("try block start here");
+        //     console.log(x); // error ko sidhe catch block m chala jayega
+        //     console.log("try block end here");
+
+        // }
+        // catch(e){
+        //     //define krte hai ,eror k sath aap kya krna chahte hai
+        //     //retry logic
+        //     // fallback mechanishm
+        //     // logging
+        //     //custom error
+        //     console.log("iam inside catch block");
+        //     console.log("your error is here",e);
+
+        // }
+
+
+
+        // finally block => error aaye ya na aaye hmesha chalega
+        //error pe depends nhi krta
+
+        //  try{
+        //     console.log("try block start here");
+        //     console.log(x); //  reference error error ko sidhe catch block m chala jayega
+        //     console.log("try block end here");
+
+        // }
+        // catch(e){
+        //     //define krte hai ,eror k sath aap kya krna chahte hai
+        //     //retry logic
+        //     // fallback mechanishm
+        //     // logging
+        //     //custom error
+        //     console.log("iam inside catch block");
+        //     console.log("your error is here",e);
+
+        // }
+
+        // finally{
+        //     console.log("iam finally block, i will execute anyway");
+        // }
+
+
+        //error throw
+
+        try{
+            console.log(x);
+
+        }
+
+        catch(e){
+            throw new Error("this is refrence error, declare nhi hai");
+
+            
+        }
+        
+
+        
+    </script>
+</body>
+</html>
