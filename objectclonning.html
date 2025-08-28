@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        let obj={
+            age:19,
+            name:"astha",
+            height:5.4,
+
+        };
+        console.log(obj);
+        obj.color="pink";
+        console.log(obj);
+
+        //object clonning
+
+
+        let src={
+            age:19,
+            name:"astha",
+            height:5.4,
+
+        };
+
+        let dest={...src};
+
+        src.age=30;
+        console.log("scr", src);
+        console.log("Dest",dest);
+
+
+
+
+        //object clonning using object.assign method
+
+
+        let source={
+            age:19,
+            name:"astha",
+            height:5.4,
+
+        };
+
+        let src2={
+            value:303,
+            name:"piyuu"
+        };
+
+
+        let destination=Object.assign({},source,src2);
+         source.age=30;
+        console.log("source", source);
+        console.log("destination", destination);
+
+
+        
+        
+        //object clooning iteration method
+
+        let source1={
+            age:19,
+            name:"astha",
+            height:5.4,
+
+        };
+        let destination1= {};
+
+        for(let key in source1){
+          let newKey=key;
+            let newValue=source1[key];
+            destination1[newKey]=newValue;
+        }
+        source1.age=30;
+
+        console.log("source", source1);
+        console.log("destination", destination1);
+
+
+    </script>
+</body>
+</html>
