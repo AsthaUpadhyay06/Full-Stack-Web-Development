@@ -48,7 +48,7 @@
 
     // });
 
-    let array= [10,20,30,40,50];
+    // let array= [10,20,30,40,50];
     // let newbarray=barray.filter((value)=>{
     //     return value>20;
     // });
@@ -56,11 +56,11 @@
    
 
 
-    let newarray=array.map((number)=>{
-        return number*number;
-    })
+    // let newarray=array.map((number)=>{
+    //     return number*number;
+    // })
 
-    console.log(newarray);
+    // console.log(newarray);
 
    
     // console.log(typeof(brr1));
@@ -76,14 +76,33 @@
 // });
 
 
-let arr=[1,2,3,4,5,64,54,2,45,32,4,5,6];
-let data=arr.sort((a,b)=>{
-    return a-b;;
-})
-console.log(data);
+// let arr=[1,2,3,4,5,64,54,2,45,32,4,5,6];
+// let data=arr.sort((a,b)=>{
+//     return a-b;;
+// })
+// console.log(data);
+
+
+// console.log(typeof(typeof(true)));
 
 
 
+let arr=[2,"hello",true];
+let arr1,arr2,arr3;
+for(let i=0;i<arr.length;i++){
+    if(typeof(arr[i])==="number"){
+        arr1=arr[i];
+        console.log("number",arr1);
+    }
+    else if(typeof(arr[i])==="string"){
+        arr2=arr[i];
+        console.log("string",arr2);
+    }
+    else if(typeof(arr[i])==="boolean"){
+        arr3=arr[i];
+        console.log("boolean",arr3);
+    }
+ 
     </script>
 </body>
 </html>

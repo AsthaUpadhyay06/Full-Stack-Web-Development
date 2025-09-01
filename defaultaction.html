@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+        <p id="fpara">Click me to change my text</p>
+<a  id="fanchor" href="https://www.amazon.com/">Click here </a>
+
+
+    </div>
+    <script>
+let fanchor=document.getElementById("fanchor");
+
+fanchor.addEventListener("click",function(event){
+    event.preventDefault();  // -> default action ko roko
+   fanchor.textContent="You clicked the link"; // -> link ka text change karo  link pe click karne ke baad amazon ki website open nhi hogi
+
+});
+
+
+    </script>
+</body>
+</html>

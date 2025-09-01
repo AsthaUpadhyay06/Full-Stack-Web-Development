@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="fpara">Click me to change my text</p>
+    </div>
+<script > 
+
+// function changeText(){
+//     let fpara=document.getElementById("fpara");
+// fpara.textContent="Hello world";
+// }
+//  let fpara=document.getElementById("fpara");
+ 
+// //apply event listener
+// //"click" event ko listen kar raha hai
+
+//  fpara.addEventListener("click",changeText);   // -> changeText Function ka reference do, JavaScript khud baad mein use call kare jab zarurat ho."
+
+//remove event listener
+//fpara.removeEventListener("click",changeText);  // -> remove event listener
+
+// fpara.removeEventListener("click",changeText);  // -> remove event listener
+
+
+
+
+// type of event object
+// event object -> event ke baare mein information deta hai
+// like konsa event hua, kis element pe hua, mouse kaha tha jab event hua etc.
+//jaise click event
+function changeText(event){
+    console.log(event);
+    let fpara=document.getElementById("fpara");
+fpara.textContent="Hello world";
+}
+ let fpara=document.getElementById("fpara");
+ 
+//apply event listener
+//"click" event ko listen kar raha hai
+
+ fpara.addEventListener("click",changeText);  
+
+</script>
+</body>
+</html>

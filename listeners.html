@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="wrapper"> <!-- first para ko click krne m srf first para aayega or span k click krne m first span aayega ui me  because of hmne taget mension kiya hai event.js--> 
+    <p id="fpara">First para <span>First span</span></p>
+    <p id="spara">Second para <span>Second span</span></p>
+    <p id="tpara">Third para <span>Third span</span></p>
+    <p id="fopara">Fourth para <span>Fourth span</span></p>
+   </div> 
+ <!-- paragraps k upar listeners lagao -->
+   <script>
+
+
+// Select all <p> tags inside #wrapper
+// let paras = document.querySelectorAll("#wrapper p");
+ //or
+  
+    // Select the wrapper using getElementById
+    // let paras=document.querySelectorAll("p");
+
+    // if you want to use id selector
+    // let wrapper = document.getElementById("wrapper");
+
+
+
+    //   Get all <p> tags inside wrapper
+    //  let paras = wrapper.getElementsByTagName("p");
+
+              // OR
+//   let para=paras[i];
+           
+
+        // Loop through all paragraphs
+    // for(let i=0; i<paras.length;i++){
+    //        let para=paras[i];
+    //     para.addEventListener("click",function(){
+    //         alert("You clicked on para:"+(i+1));
+    //     })
+    // }
+    
+ //best practises
+ //or 
+
+//  let paras=document.querySelectorAll("p");
+ function alertPara(event){
+
+    //agar srf span tag bus dikhe to
+    if (event.target.nodeName=="SPAN")
+    alert("You clicked on para:" + event.target.textContent );
+
+ }
+// for(let i=0; i<paras.length;i++){
+//            let para=paras[i];
+//         para.addEventListener("click",alertPara);
+// }
+
+
+//or
+
+// div k sath listener lga diya  optimal solution
+ let mydiv=document.getElementById("wrapper");
+ document.addEventListener("click",alertPara)
+
+
+ 
+
+
+
+
+
+   </script>
+</body>
+</html>
