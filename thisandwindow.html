@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         a=5; 
+//         // console.log(a);
+//  let obj={
+//     id:101,
+//     name:"astha",
+//     sum:function(){
+//         console.log(this);
+//         console.log(this.a);
+
+//         console.log(window)
+//     }
+   
+
+a=5;
+let obj={
+    id:203,
+    a:10,
+    name:"Astha",
+    sum:()=>{
+        console.log(this.a); // becaue of arrow function ye object ko refer nhi kar rha hai
+        //arrow function me this keyword kaam nhi karta
+    }
+}
+
+ obj.sum();
+console.log( this.a)  // global refer kar rha hai
+ 
+     
+
+    </script>
+</body>
+</html>
