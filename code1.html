@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        tasks = {}
+
+while True:
+    print("\n1. Add Task\n2. View Tasks\n3. Exit")
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+        task = input("Enter task name: ")
+        tasks[len(tasks)+1] = task
+    elif choice == "2":
+        for k, v in tasks.items():
+            print(k, ":", v)
+    elif choice == "3":
+        break
+    else:
+        print("Invalid choice")
+    </script>
+</body>
+</html>
