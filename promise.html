@@ -7,39 +7,39 @@
 </head>
 <body>
     <script>
-        // let FirstPromise=new Promise((resolve,reject)=>{
-        //     console.log("asthaupadhyay");
-        //     reject(new Error("Internal error ")); //generate error
-        //     resolve(1001); fullfilled state
-        // });
+        let FirstPromise=new Promise((resolve,reject)=>{
+            console.log("asthaupadhyay");
+            reject(new Error("Internal error ")); //generate error
+            resolve(1001); //fullfilled state
+        });
 
-//         function sayMyName(){
-//             console.log("My name is love astha")
-//         }
-//         setTimeout(sayMyName,10000)
-//         //or
-//  setTimeout(function sayMyName(){
-//             console.log("My name is love astha")
-//         },10000)
+        function sayMyName(){
+            console.log("My name is love astha")
+        }
+        setTimeout(sayMyName,10000)
+        //or
+ setTimeout(function sayMyName(){
+            console.log("My name is love astha")
+        },10000)
 
-//         //or 
-//         let FirstPromise=new Promise((resolve,reject)=>{
-//              setTimeout(function sayMyName(){
-//             console.log("My name is love astha")
-//         },10000)
+        //or 
+    //     let FirstPromise=new Promise((resolve,reject)=>{
+    //          setTimeout(function sayMyName(){
+    //         console.log("My name is love astha")
+    //     },10000)
 
-//     });
+    // });
 
 
-let promise1=new Promise((resolve,reject)=>{
-    let success=true;
-    if(success){
-        resolve("promise fullfilled");
-    }
-    else{
-        reject("promise rejected");
-    }
-});
+// let promise1=new Promise((resolve,reject)=>{
+//     let success=true;
+//     if(success){
+//         resolve("promise fullfilled");
+//     }
+//     else{
+//         reject("promise rejected");
+//     }
+// });
 // promise1.then((message)=>{
 //     console.log("then  ka message is " + message);
 
@@ -50,18 +50,18 @@ let promise1=new Promise((resolve,reject)=>{
 
 // promise chaining  ujse multiple then block
 
-promise1.then((message)=>{
-    console.log(" first message is " + message);
-    return "promise fullfilled second message";
+// promise1.then((message)=>{
+//     console.log(" first message is " + message);
+//     return "promise fullfilled second message";
 
-}).then((message)=>{
-    console.log("second message " + message);
-    return "promise fullfilled third message";
-}).then((message)=>{
-    console.log("third message " + message);
+// }).then((message)=>{
+//     console.log("second message " + message);
+//     return "promise fullfilled third message";
+// }).then((message)=>{
+//     console.log("third message " + message);
      
     
-});
+// });
 
 
 
