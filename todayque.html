@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1, 2, -3, 4, 5];
+let n = arr.length;
+let k = 3;
+
+let maxSum = -Infinity; // start with very small number
+
+for (let i = 0; i <= n - k; i++) {
+    let currSum = 0;
+    for (let j = i; j < i + k; j++) {
+        currSum += arr[j];
+    }
+    if (currSum > maxSum) {
+        maxSum = currSum;
+    }
+}
+
+console.log("Maximum sum of subarray of size", k, "is:", maxSum);
+
+      
+
+
+        
+    </script>
+</body>
+</html>
